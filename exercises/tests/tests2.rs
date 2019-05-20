@@ -4,9 +4,14 @@
 
 #[cfg(test)]
 mod tests {
+    use std::ptr::null;
+
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+        let a: *const u8 = null();
+        let b: *const u8 = null();
+
+        assert_eq!(a, b);
     }
 }
 

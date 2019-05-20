@@ -10,17 +10,9 @@
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!();
+        assert!(1 == (true as u32));
     }
 }
-
-
-
-
-
-
-
-
 
 
 
