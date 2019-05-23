@@ -1,10 +1,11 @@
 // iterators4.rs
 
 pub fn factorial(num: u64) -> u64 {
-    match num {
-        1 => 1,
-        x => x * factorial(x - 1)
-    }
+    // match num {
+    //     1 => 1,
+    //     x => x * factorial(x - 1)
+    // }
+    (1..=num).product()
 }
 
 #[cfg(test)]
